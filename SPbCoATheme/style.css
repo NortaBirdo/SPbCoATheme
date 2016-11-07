@@ -1,14 +1,3 @@
-/*
-Theme Name: SPb CoA theme
-Theme URI: https://github.com/NortaBirdo/SPbCoATheme
-Author: Nikolay Sokolovskiy
-Author URI: https://oriolo.ru
-Description: Описание вашей темы
-Version: 1.0
-License: CCA 3.0 license
-License URI: http://creativecommons.org/licenses/by/3.0/
-*/
-
 body {
   font-family: Arial;
   font-size: 16px;
@@ -48,6 +37,7 @@ a:active {
 }
 
 .menu {
+
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -57,15 +47,11 @@ a:active {
   align-content: flex-start;
 }
 
-.menu a {
+.menu-point {
   margin: 5px 0;
 }
 
-.menu a, 
-.menu a:visited, 
-.menu a:focus, 
-.menu a:hover, 
-.menu a:active  {
+.menu-point, .menu-point:visited, .menu-point:focus, .menu-point:hover, .menu-point:active  {
   min-width: 100px;
   border-color: black;
   border-width: 2px;
@@ -97,9 +83,21 @@ a:active {
   text-align: center;
 }
 
-.feed {
+.feed, .contacts {
   width: 900px;/*ToDo заменить на переменные*/
   padding-top: 50px;
+}
+
+.contacts ol {
+  list-style: none;
+  line-height: 2.0;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts ol li {
+  margin: 0;
+  padding: 0;
 }
 
 .single_preview {

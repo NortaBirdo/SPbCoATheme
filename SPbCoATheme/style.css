@@ -1,0 +1,125 @@
+body {
+  font-family: Arial;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  color: #2979FF;
+}
+
+a:visited {
+color: #FF1744;
+}
+
+a:focus{
+  color: #D500F9;
+}
+
+a:hover {
+  color: #FF9100;
+}
+
+a:active {
+  color: #D500F9;
+}
+
+.wrapper {
+  width: 900px;
+  min-height: 60vh;
+  margin: 0 auto;
+  padding-bottom: 300px;
+  background-image: url('./peter2.jpg');
+  background-repeat: repeat-x;
+  background-size: 270px;
+  background-position: bottom;
+}
+
+.menu {
+
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+.menu-point {
+  margin: 5px 0;
+}
+
+.menu-point, .menu-point:visited, .menu-point:focus, .menu-point:hover, .menu-point:active  {
+  min-width: 100px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.general {
+  height: 500px; /*ToDo заменить на переменные*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  align-content: space-around;
+}
+
+.caption {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.slogan {
+  margin-top: 50px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.feed, .contacts {
+  width: 900px;/*ToDo заменить на переменные*/
+  padding-top: 50px;
+}
+
+.contacts ol {
+  list-style: none;
+  line-height: 2.0;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts ol li {
+  margin: 0;
+  padding: 0;
+}
+
+.single_preview {
+  margin-bottom: 40px;
+  border-bottom: 2px gray solid;
+}
+
+.single_preview h2 {
+  margin-bottom: 5px;
+}
+
+.single_preview h2 a {
+  text-decoration: none;
+  color: #333;
+}
+
+.time, .author {
+  font-size: 10pt;
+  color: #999
+}
+
+.preview_text {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}

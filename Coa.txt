@@ -1,0 +1,8 @@
+http://coa-dev.sokolovskiy.net/
+sokoloit
+fDzPDBgfr
+
+
+FTP
+sokoloit_coa
+win32eng

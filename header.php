@@ -13,6 +13,10 @@
   <body <?php body_class(); ?>>
     <div class="wrapper">
       <div class="header">
+         <div class="coa-title">
+          Saint-Petersburg <br>
+          Community of Analysts
+        </div>  
         <?php
         $menuParameters = array(
           'container'       => false,

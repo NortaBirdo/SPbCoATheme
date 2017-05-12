@@ -9,6 +9,11 @@ License: CCA 3.0 license
 License URI: http://creativecommons.org/licenses/by/3.0/
 */
 
+@font-face {
+    font-family: web-serveroff;
+    src: url('./font/web-serveroff.ttf') format('truetype');
+}
+
 body {
   font-family: Arial;
   font-size: 16px;
@@ -42,17 +47,18 @@ a:active {
 }
 
 .menu {
-  margin: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
+  font-family: web-serveroff;
 }
 
 .menu a {
-  margin: 5px 0;
+  margin: 10px 0;
+  margin-left: 15px;  
 }
 
 .menu a,
@@ -60,7 +66,7 @@ a:active {
 .menu a:focus,
 .menu a:hover,
 .menu a:active  {
-  min-width: 100px;
+  min-width: 70px;
   border-color: black;
   border-width: 2px;
   border-style: solid;
@@ -68,25 +74,33 @@ a:active {
   text-align: center;
   text-decoration: none;
   color: #333;
+  font-size: 22px;
 }
 
 .general {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: stretch;
   align-content: space-around;
 }
 
-.caption {
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;
+.header {
+  display: flex;
+  justify-content: space-between;  
+  flex-wrap: wrap;
+}
+
+.coa-title {
+  border-bottom: 3px rgb(20,109,165) solid;
+  margin: 10px;
+  font-size: 24px;
 }
 
 .slogan {
   margin-top: 50px;
-  text-align: center;
+  margin-left: 10px;
+  margin-bottom: 50px;   
+  font-family: web-serveroff;  
 }
 
 .feed {
@@ -118,6 +132,21 @@ a:active {
   line-height: 1.5;
 }
 
+.footer {
+  background: rgb(20,109,165);
+  display: flex;
+  min-width: 100%;
+  min-height: 40px;
+  color: white;
+  font-size: 10pt;
+  align-items: center;
+  font-family: web-serveroff;  
+}
+
+.footer span {
+  margin-left:10px;
+}
+
 @media (min-width: 600px) {
   .wrapper{
     width: 600px;
@@ -126,19 +155,20 @@ a:active {
 
 @media (min-width: 900px) {
   .wrapper{
-    width: 900px;
-    background-image: url('./peter2.jpg');
-    background-repeat: repeat-x;
+    width: 100%;
     background-size: 270px;
     background-position: bottom;
-    padding-bottom: 300px;
   }
 
   .slogan {
-    font-size: 16px;
+    font-size: 28px;
+    max-width:40%;
   }
 
   .general {
     height: 500px;
+    background-image: url('./img/background.jpg');
+    background-repeat: no-repeat;    
+    min-height: 770px;
   }
 }
